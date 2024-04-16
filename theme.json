@@ -2,7 +2,7 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "1600px",
+			"contentSize": "1500px",
 			"wideSize": "1920px"
 		},
 		"spacing": {
@@ -17,71 +17,6 @@
 		},
 		"typography": {
 			"fluid": true,
-			"fontSizes": [
-				{
-					"fluid": {
-						"max": "0.84rem",
-						"min": "0.79rem"
-					},
-					"name": "Small",
-					"slug": "sm-r",
-					"size": "0.8rem"
-				},
-				{
-					"fluid": {
-						"max": "1.13rem",
-						"min": "0.97rem"
-					},
-					"name": "Base",
-					"slug": "bs-r",
-					"size": "1rem"
-				},
-				{
-					"fluid": {
-						"max": "1.5rem",
-						"min": "1.18rem"
-					},
-					"name": "Medium",
-					"slug": "md-r",
-					"size": "1.25rem"
-				},
-				{
-					"fluid": {
-						"max": "2rem",
-						"min": "1.45rem"
-					},
-					"name": "Large",
-					"slug": "lg-r",
-					"size": "1.56rem"
-				},
-				{
-					"fluid": {
-						"max": "2.66rem",
-						"min": "1.77rem"
-					},
-					"name": "XL",
-					"slug": "xl-r",
-					"size": "1.95rem"
-				},
-				{
-					"fluid": {
-						"max": "3.55rem",
-						"min": "2.15rem"
-					},
-					"name": "XXL",
-					"slug": "xxl-r",
-					"size": "2.44rem"
-				},
-				{
-					"fluid": {
-						"max": "4.73rem",
-						"min": "2.61rem"
-					},
-					"name": "XXXL",
-					"slug": "xxxl-r",
-					"size": "3.05rem"
-				}
-			],
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -148,6 +83,71 @@
 					"fontFamily": "Rasa",
 					"slug": "rasa"
 				}
+			],
+			"fontSizes": [
+				{
+					"fluid": {
+						"max": "0.84rem",
+						"min": "0.79rem"
+					},
+					"name": "Small",
+					"size": "0.8rem",
+					"slug": "sm-r"
+				},
+				{
+					"fluid": {
+						"max": "1.13rem",
+						"min": "0.97rem"
+					},
+					"name": "Base",
+					"size": "1rem",
+					"slug": "bs-r"
+				},
+				{
+					"fluid": {
+						"max": "1.5rem",
+						"min": "1.18rem"
+					},
+					"name": "Medium",
+					"size": "1.25rem",
+					"slug": "md-r"
+				},
+				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.45rem"
+					},
+					"name": "Large",
+					"size": "1.56rem",
+					"slug": "lg-r"
+				},
+				{
+					"fluid": {
+						"max": "2.66rem",
+						"min": "1.77rem"
+					},
+					"name": "XL",
+					"size": "1.95rem",
+					"slug": "xl-r"
+				},
+				{
+					"fluid": {
+						"max": "3.55rem",
+						"min": "2.15rem"
+					},
+					"name": "XXL",
+					"size": "2.44rem",
+					"slug": "xxl-r"
+				},
+				{
+					"fluid": {
+						"max": "4.73rem",
+						"min": "2.61rem"
+					},
+					"name": "XXXL",
+					"size": "3.05rem",
+					"slug": "xxxl-r"
+				}
 			]
 		},
 		"useRootPaddingAwareAlignments": true
@@ -164,6 +164,30 @@
 			"text": "var(--wp--preset--color--black)"
 		},
 		"elements": {
+			"button": {
+				"color": {
+					"gradient": "linear-gradient(135deg,rgb(31,31,31) 0%,rgb(45,73,117) 100%)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--scada)",
+					"letterSpacing": "1px",
+					"lineHeight": "1",
+					"textTransform": "uppercase"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--scada)",
+					"fontSize": "var(--wp--preset--font-size--sm-r)",
+					"fontStyle": "normal",
+					"fontWeight": "600",
+					"letterSpacing": "0.03rem",
+					"textTransform": "uppercase"
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontSize": "clamp(3.05rem, 1.77vi + 2.61rem, 4.73rem)",
@@ -200,26 +224,6 @@
 					"lineHeight": "1.1"
 				}
 			},
-			"button": {
-				"color": {
-					"gradient": "linear-gradient(135deg,rgb(31,31,31) 0%,rgb(45,73,117) 100%)"
-				},
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--scada)",
-					"letterSpacing": "1px",
-					"lineHeight": "1",
-					"textTransform": "uppercase"
-				}
-			},
-			"caption": {
-				"color": {
-					"text": "var(--wp--preset--color--black)"
-				},
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--scada)",
-					"textTransform": "uppercase"
-				}
-			},
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--scada)",
@@ -231,9 +235,15 @@
 			},
 			"link": {
 				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--black)"
+					},
 					"typography": {
 						"textDecoration": "underline"
 					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--black)"
 				},
 				"typography": {
 					"textDecoration": "none"

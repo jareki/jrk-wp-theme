@@ -45,3 +45,8 @@ Tags: full-site-editing,
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
